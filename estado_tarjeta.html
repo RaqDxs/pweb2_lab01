@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Estado de Tarjeta</title>
+    <link rel="stylesheet" href="./css/estilos_generales.css" />
+    <link rel="stylesheet" href="./css/menus_clientes.css" />
+    <script src="./scripts/utilidades.js"></script>
+    <script src="./scripts/menus.js"></script>
+    <script src="./scripts/estado_tarjeta.js"></script>
+    <script src="./scripts/lista_tarjetas.js"></script>
+    <script src="./scripts/slide.js"></script>
+</head>
+
+<body onload="init('cliente')">
+    <div id="content" class="content">
+        <div class="top">
+            <h2>Estado de cuenta</h2>
+            <div class="rigthTop">
+                <a href="./index_clientes.html" class="btnLink">Volver</a>
+                <div>
+                    <h5 id="timer">Su sesión concluirá en:</h5>
+                    <input type="button" class="logout" onclick="closeSession('cliente')" value="Cerrar sesión" />
+                </div>
+            </div>
+        </div>
+        <div class="cards">
+            <h3 class="label-slide">Seleciona una tarjeta</h2>
+                <img class="prev control" src="./assets/arrow-prev.png" alt="">
+                <div id="slide" class="slide">
+                    
+                </div>
+                <img class="control next" src="./assets/arrow.png" alt="">
+        </div>
+        <input type="button" value="Obtener estado" class="submitButton" onclick="getStatus()" />
+        <div class="form">
+            <h3>Balance de cuenta:</h3>
+            <div id="balance"></div>
+            <h3>Últimos movimientos:</h3>
+        </div>
+        <div id="movements" style="width: 100%;">
+            <div class="movement">
+                <h5 style="font-size: 20px;">CANTIDAD</h5>
+                <h5 style="font-size: 20px;">TIPO</h5>
+                <h5 style="font-size: 20px;">FECHA</h5>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Operario</title>
+    <link rel="stylesheet" href="./css/estilos_generales.css" />
+    <link rel="stylesheet" href="./css/menus_operarios.css" />
+    <script src="./scripts/utilidades.js"></script>
+    <script src="./scripts/menus.js"></script>
+</head>
+
+<body onload="init('operario')">
+    <div id="content" class="content">
+        <div class="top">
+            <h2>
+                Acceso rápido
+                <div id="welcome"></div>
+            </h2>
+            <div class="rigthTop">
+                <div>
+                    <h5 id="timer">Su sesión concluirá en:</h5>
+                    <input type="button" class="logout" onclick="closeSession('operario')" value="Cerrar sesión" />
+                </div>
+            </div>
+        </div>
+        <div class="menu">
+            <a href="./registro_clientes.html" class="btnLink">Ingresar nuevo cliente</a>
+            <a href="./registro_cuentas.html" class="btnLink">Crear nueva cuenta</a>
+            <a href="./registro_tarjetas.html" class="btnLink">Crear nueva tarjeta</a>
+            <a href="./eliminar_clientes.html" class="btnLink">Eliminar un cliente</a>
+            <a href="./eliminar_cuentas.html" class="btnLink">Eliminar una cuenta</a>
+            <a href="./eliminar_tarjetas.html" class="btnLink">Eliminar una tarjeta</a>
+        </div>
+    </div>
+</body>
+
+</html>
